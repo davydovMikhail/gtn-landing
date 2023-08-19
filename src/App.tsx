@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import copy from 'copy-to-clipboard';
 import Timeout from 'await-timeout';
-import Logo from "./img/Logo.svg"
 import BigLogo from "./img/BigLogo.svg"
 import twitter from "./img/twitter.svg"
 import telega from "./img/telega.svg"
 import copyIcon from "./img/copy.svg"
 import verify from "./img/verify.svg"
 import flash from "./img/flash.svg"
+import Header from './components/header';
 
 
 function App() {
@@ -24,34 +24,11 @@ function App() {
 
   return (
     <main>
-            <div className="header">
-                <img src={Logo} alt="logo"/>
-                <div className="header__bar">
-                    <div className="header__item header__item_active">
-                        <div className="header__text_active">
-                            Main page
-                        </div>
-                    </div>
-                    <div className="header__item header__item_hover">
-                        <div>
-                            About us
-                        </div>
-                    </div>
-                    <div className="header__item header__item_hover">
-                        <div>
-                            Tokenomics
-                        </div>
-                    </div>
-                </div>
-                <div className="header__buttons">
-                    <a className="button__size button__transparent" href="#">Start app</a>
-                    <a className="button__size button__style" href="#">Buy tokens</a>
-                </div>
-            </div>
+            <Header/>
 
             <div className="wrapper">
                 <div className="logo">
-                    <img src={BigLogo} alt=""/>
+                    <img className="logo__img" src={BigLogo} alt=""/>
                 </div>
                 <div className="title">
                     <img className="title__logo" src={verify} alt="about"/>
@@ -68,14 +45,7 @@ function App() {
                             Jinko Chino (jap. 人工知能 — Artificial Intelligence) is a next generation AI powered meme token ($JCAi) on Ethereum with a first of its kind use-case.
                         </div>
                         <div className="meet__info">
-                            {/* <div className="meet__links">
-                                <a href="#">
-                                    <img src={twitter} alt=""/>
-                                </a>
-                                <a href="#">
-                                    <img src={telega} alt=""/>
-                                </a>
-                            </div> */}
+                            
                             <div className="meet__address">
                                 <div className="meet__contract">{address}</div>
                                 <div className="meet__copy" onClick={() => {copyToClipboard()}}>
@@ -92,22 +62,28 @@ function App() {
                        
                     </div>
                     
+                </div>
+                <div className="title">
+                <img className="title__logo" src={flash} alt="about"/>
+                <div className="title__text">
+                    Place a bet — win <span className="title__text_span">$RBET</span> tokens
+                </div>
+            </div>
+            </div>
 
 
 
+{/* <div className="meet__links">
+                                <a href="#">
+                                    <img src={twitter} alt=""/>
+                                </a>
+                                <a href="#">
+                                    <img src={telega} alt=""/>
+                                </a>
+                            </div> */}
 
 
-
-
-
-
-
-                
-
-
-
-
-                {/* <div className="meet">
+{/* <div className="meet">
                     <div className="meet__title">
                         Meet range bet!
                     </div>
@@ -132,15 +108,10 @@ function App() {
                         <a className="button__size button__style" href="#">Buy tokens</a>
                     </div>
                 </div> */}
-                
-                </div>
-                <div className="title">
-                <img className="title__logo" src={flash} alt="about"/>
-                <div className="title__text">
-                    Place a bet — win <span className="title__text_span">$RBET</span> tokens
-                </div>
-            </div>
-              </div>
+
+
+
+
             
     </main>
   );
