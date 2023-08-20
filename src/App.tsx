@@ -44,15 +44,22 @@ function App() {
                         <div className="one__text">
                             Jinko Chino (jap. 人工知能 — Artificial Intelligence) is a next generation AI powered meme token ($JCAi) on Ethereum with a first of its kind use-case.
                         </div>
-                        <div className="meet__info">
-                            
-                            <div className="meet__address">
-                                <div className="meet__contract">{address}</div>
-                                <div className="meet__copy" onClick={() => {copyToClipboard()}}>
+                        <div className="provide">
+                            <div className="provide__links">
+                                <a href="#">
+                                    <img src={twitter} alt="x"/>
+                                </a>
+                                <a href="#">
+                                    <img src={telega} alt="tg"/>
+                                </a>
+                            </div>
+                            <div className="provide__address">
+                                <div className="provide__contract">{address}</div>
+                                <div className="provide__copy" onClick={() => {copyToClipboard()}}>
                                     <img src={copyIcon} alt="copy icon"/>
                                 </div>
                             </div>
-                            <a className="button__size button__style" href="#">Buy tokens</a>
+                            <a className="provide__buy button__size button__style" href="#">Buy tokens</a>
                         </div>
                     </div>
                     <div className="about__2 about__section">
@@ -70,49 +77,6 @@ function App() {
                 </div>
             </div>
             </div>
-
-
-
-{/* <div className="meet__links">
-                                <a href="#">
-                                    <img src={twitter} alt=""/>
-                                </a>
-                                <a href="#">
-                                    <img src={telega} alt=""/>
-                                </a>
-                            </div> */}
-
-
-{/* <div className="meet">
-                    <div className="meet__title">
-                        Meet range bet!
-                    </div>
-                    <div className="meet__text">
-                        Jinko Chino (jap. 人工知能 — Artificial Intelligence) is a next generation AI powered meme token ($JCAi) on Ethereum with a first of its kind use-case.
-                    </div>
-                    <div className="meet__info">
-                        <div className="meet__links">
-                            <a href="#">
-                                <img src="img/twitter.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="img/telega.svg" alt="">
-                            </a>
-                        </div>
-                        <div className="meet__address">
-                            <div className="meet__contract">0x012...3a5f</div>
-                            <div className="meet__copy">
-                                <img src="img/copy.svg" alt="">
-                            </div>
-                        </div>
-                        <a className="button__size button__style" href="#">Buy tokens</a>
-                    </div>
-                </div> */}
-
-
-
-
-            
     </main>
   );
 }

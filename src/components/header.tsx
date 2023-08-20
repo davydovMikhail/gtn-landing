@@ -27,7 +27,7 @@ const Header = () => {
           top: '0',
           position: 'fixed',
           height: '100vh',
-          width: '70%'
+          width: '100%'
           
         },
         bmMenu: {
