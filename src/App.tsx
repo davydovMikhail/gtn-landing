@@ -26,10 +26,12 @@ function App() {
     <main>
             <Header/>
 
+            <a id="main" className="anchor" href=""></a>
             <div className="wrapper">
                 <div className="logo">
                     <img className="logo__img" src={BigLogo} alt=""/>
                 </div>
+                <a id="about" className="anchor" href=""></a>
                 <div className="title">
                     <img className="title__logo" src={verify} alt="about"/>
                     <div className="title__text">

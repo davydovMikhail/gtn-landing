@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import Logo from "../img/Logo.svg"
-import { slide as Menu } from 'react-burger-menu'
+import React, { useState, useContext } from 'react';
+import Logo from "../img/Logo.svg";
+import { slide as Menu } from 'react-burger-menu';
+import Timeout from 'await-timeout';
 
 const Header = () => {
     var styles = {
@@ -47,46 +48,67 @@ const Header = () => {
         bmItem: {
           display: 'inline-block',
           color: '#fff',
-          marginBottom: '30px'
+          marginBottom: '70px',
+          fontSize: '40px'
         },
         bmOverlay: {
           background: 'rgba(0, 0, 0, 0.3)'
         }
       }
     
+      const [isOpen, setOpen] = useState(false)
+      const [tab, setTab] = useState(0);
+
+      const handleIsOpen = () => {
+        setOpen(!isOpen)
+      }
+
+      const closeSideBar = () => {
+        setOpen(false)
+      }
+
+      async function chooseTab(tab: number) {
+        setTab(tab);
+        await Timeout.set(2500);
+        setTab(0);
+      }
 
     return (
       <>
         <div className="header">
             <img src={Logo} alt="logo"/>
             <div className="header__bar">
-                <div className="header__item header__item_active">
-                    <div className="header__text_active">
+                <a href="#main" onClick={() => {chooseTab(1)}} className={"header__item " + (tab === 1 ? "header__item_active" : "header__item_hover")}>
+                    <div className={tab === 1 ? "header__text_active" : ""}>
                         Main page
                     </div>
-                </div>
-                <div className="header__item header__item_hover">
-                    <div>
+                </a>
+                <a href="#about" onClick={() => {chooseTab(2)}} className={"header__item " + (tab === 2 ? "header__item_active" : "header__item_hover")}>
+                    <div className={tab === 2 ? "header__text_active" : ""}>
                         About us
                     </div>
-                </div>
-                <div className="header__item header__item_hover">
-                    <div>
+                </a>
+                <a onClick={() => {chooseTab(3)}} className={"header__item " + (tab === 3 ? "header__item_active" : "header__item_hover")}>
+                    <div className={tab === 3 ? "header__text_active" : ""}>
                         Tokenomics
                     </div>
-                </div>
+                </a>
             </div>
             <div className="header__buttons">
-                <a className="button__size button__transparent" href="#">Start app</a>
+                <a className="button__size button__transparent" href="#" style={{marginRight: "8px"}}>Start app</a>
                 <a className="button__size button__style" href="#">Buy tokens</a>
             </div>
             <div className='mob-menu'>
-                <Menu styles={styles} right>
-                    <a id="home" className="menu-item" href="/">Main page</a>
-                    <a id="about" className="menu-item" href="/about">About us</a>
-                    <a id="contact" className="menu-item" href="/contact">Tokenomics</a>
-                    <a id="contact" className="menu-item" href="/contact">Start App</a>
-                    <a id="contact" className="menu-item" href="/contact">Buy tokens</a>
+                <Menu
+                  isOpen={isOpen}
+                  onOpen={handleIsOpen}
+                  onClose={handleIsOpen}
+                 styles={styles} right>
+                    <a onClick={closeSideBar} className="menu-item" href="#main">Main page</a>
+                    <a onClick={closeSideBar} className="menu-item" href="#about">About us</a>
+                    <a onClick={closeSideBar} className="menu-item" href="/contact">Tokenomics</a>
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://www.youtube.com/">Start App</a>
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://www.youtube.com/">Buy tokens</a>
                 </Menu>
             </div>
             
