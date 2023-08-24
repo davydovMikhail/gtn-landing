@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/gtn-landing/static/css/main.5ec58a85.css",
-    "main.js": "/gtn-landing/static/js/main.4cbaf988.js",
-    "static/media/BigLogo.svg": "/gtn-landing/static/media/BigLogo.807b4f7580a32f1804a2650bbb0d0fd0.svg",
-    "static/media/verify.svg": "/gtn-landing/static/media/verify.178bdfe47c0709594f2ba1e8fa32cc3d.svg",
-    "static/media/Logo.svg": "/gtn-landing/static/media/Logo.94aff54a0580e58cc9c957c135b9e99c.svg",
-    "static/media/flash.svg": "/gtn-landing/static/media/flash.e6b46a0b6d700232441b121387a2198a.svg",
-    "static/media/twitter.svg": "/gtn-landing/static/media/twitter.9c5315897b478584dff28db2778a1166.svg",
-    "index.html": "/gtn-landing/index.html",
-    "static/media/copy.svg": "/gtn-landing/static/media/copy.f1b835879d848fe671068838372461d2.svg",
-    "static/media/telega.svg": "/gtn-landing/static/media/telega.1d200c7efd5ae5ef4a391a851cb1ff29.svg",
-    "main.5ec58a85.css.map": "/gtn-landing/static/css/main.5ec58a85.css.map",
-    "main.4cbaf988.js.map": "/gtn-landing/static/js/main.4cbaf988.js.map"
+    "main.css": "/static/css/main.5ec58a85.css",
+    "main.js": "/static/js/main.15bff6b5.js",
+    "static/media/BigLogo.svg": "/static/media/BigLogo.807b4f7580a32f1804a2650bbb0d0fd0.svg",
+    "static/media/verify.svg": "/static/media/verify.178bdfe47c0709594f2ba1e8fa32cc3d.svg",
+    "static/media/Logo.svg": "/static/media/Logo.94aff54a0580e58cc9c957c135b9e99c.svg",
+    "static/media/flash.svg": "/static/media/flash.e6b46a0b6d700232441b121387a2198a.svg",
+    "static/media/twitter.svg": "/static/media/twitter.9c5315897b478584dff28db2778a1166.svg",
+    "index.html": "/index.html",
+    "static/media/copy.svg": "/static/media/copy.f1b835879d848fe671068838372461d2.svg",
+    "static/media/telega.svg": "/static/media/telega.1d200c7efd5ae5ef4a391a851cb1ff29.svg",
+    "main.5ec58a85.css.map": "/static/css/main.5ec58a85.css.map",
+    "main.15bff6b5.js.map": "/static/js/main.15bff6b5.js.map"
   },
   "entrypoints": [
     "static/css/main.5ec58a85.css",
-    "static/js/main.4cbaf988.js"
+    "static/js/main.15bff6b5.js"
   ]
 }
