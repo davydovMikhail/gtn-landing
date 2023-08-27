@@ -88,30 +88,29 @@ const Header = () => {
                         About us
                     </div>
                 </a>
-                <a onClick={() => {chooseTab(3)}} className={"header__item " + (tab === 3 ? "header__item_active" : "header__item_hover")}>
+                <a href="#tokenomics" onClick={() => {chooseTab(3)}} className={"header__item " + (tab === 3 ? "header__item_active" : "header__item_hover")}>
                     <div className={tab === 3 ? "header__text_active" : ""}>
                         Tokenomics
                     </div>
                 </a>
             </div>
             <div className="header__buttons">
-                <a className="button__size button__transparent" href="#" style={{marginRight: "8px"}}>Start app</a>
-                <a className="button__size button__style" href="#">Buy tokens</a>
+                <a className="button__size button__transparent" target='_blank' href="https://play.rangebet.xyz/" style={{marginRight: "8px"}}>Start app</a>
+                <a className="button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
             </div>
             <div className='mob-menu'>
                 <Menu
                   isOpen={isOpen}
                   onOpen={handleIsOpen}
                   onClose={handleIsOpen}
-                 styles={styles} right>
+                  styles={styles} right>
                     <a onClick={closeSideBar} className="menu-item" href="#main">Main page</a>
                     <a onClick={closeSideBar} className="menu-item" href="#about">About us</a>
-                    <a onClick={closeSideBar} className="menu-item" href="/contact">Tokenomics</a>
-                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://www.youtube.com/">Start App</a>
-                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://www.youtube.com/">Buy tokens</a>
+                    <a onClick={closeSideBar} className="menu-item" href="#tokenomics">Tokenomics</a>
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://play.rangebet.xyz/">Start App</a>
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
                 </Menu>
             </div>
-            
         </div>
       </>
     );

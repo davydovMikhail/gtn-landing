@@ -260,7 +260,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
-    margin-top: 32px;
+    margin-top: 96px;
 }
 .title__logo {
     margin-right: 16px;
@@ -406,7 +406,7 @@ body {
 .anchor {
     display: block;
     position: relative;
-    top: -130px;
+    top: -260px;
     visibility: hidden;
 }
 
@@ -483,7 +483,28 @@ body {
   top: 280px;
   left: 63%;
 }
-
+.footer {
+  margin-top: 117px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  background: #0A0A0A;
+  height: 176px;
+  padding: 48px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__links {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  color: var(--white-op-20, rgba(255, 255, 255, 0.20));
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration-line: underline;
+  margin: 0 5px 0 5px;
+}
 @media (max-width: 1600px) {
   .header {
     width: 1300px;
@@ -511,6 +532,9 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  .footer {
+    padding: 6px 25px;
+  }
   .tokenomics__casino {
     top: 35px;
   }
@@ -628,6 +652,9 @@ body {
   }
 }
 @media (max-width: 889px) {
+  .footer__text {
+    font-size: 12px;
+  }
   .tokenomics__pic {
     display: none;
   }
@@ -640,18 +667,6 @@ body {
     padding: 10px;
     flex-wrap: wrap;
   }
-  /* .tokenomics__casino {
-    top: 35px;
-  }
-  .tokenomics__treasury {
-    top: 35px;
-  }
-  .tokenomics__liquidity {
-    top: 230px;
-  }
-  .tokenomics__team {
-    top: 230px;
-  } */
 }
 
 

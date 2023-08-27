@@ -11,6 +11,9 @@ import flash from "./img/flash.svg"
 import clever from "./img/clever.gif"
 import fox from "./img/fox.svg"
 import vector from "./img/vector.svg"
+import MiniLogo from "./img/MiniLogo.svg"
+import Telegram from "./img/Telegram.svg"
+import XxX from "./img/twitter.png"
 import Header from './components/header';
 
 
@@ -34,13 +37,13 @@ function App() {
                 <div className="logo">
                     <img className="logo__img" src={BigLogo} alt=""/>
                 </div>
-                <a id="about" className="anchor" href=""></a>
                 <div className="title">
                     <img className="title__logo" src={verify} alt="about"/>
                     <div className="title__text">
                         About the project
                     </div>
                 </div>
+                <a id="about" className="anchor" href=""></a>
                 <div className="about">
                     <div className="about__1 about__section">
                         <div className="one__title">
@@ -64,7 +67,7 @@ function App() {
                                     <img src={copyIcon} alt="copy icon"/>
                                 </div>
                             </div>
-                            <a className="provide__buy button__size button__style" href="#">Buy tokens</a>
+                            <a className="provide__buy button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
                         </div>
                     </div>
                     <div className="about__2 about__section">
@@ -88,8 +91,8 @@ function App() {
                 </div>
                 <div className="banner">
                     <div className="banner__buttons">
-                        <a className="banner__button button__transparent" href="#" style={{marginRight: "8px"}}>Start app</a>
-                        <a className="banner__button button__style" href="#">Buy tokens</a>
+                        <a className="banner__button button__transparent" target='_blank' href="https://play.rangebet.xyz/" style={{marginRight: "8px"}}>Start app</a>
+                        <a className="banner__button button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
                     </div>
                 </div>
 
@@ -99,6 +102,7 @@ function App() {
                         Tokenomics
                     </div>
                 </div>
+                <a id="tokenomics" className="anchor" href=""></a>
                 <div className="tokenomics">
                     <img className="tokenomics__pic" src={vector} alt="" />
                     <div className="tokenomics__item tokenomics__casino">
@@ -113,6 +117,19 @@ function App() {
                     <div className="tokenomics__item tokenomics__team">
                         <span className="tokenomics__item_span">10%</span> Team
                     </div>
+                </div>
+            </div>
+            <div className="footer">
+                <img src={MiniLogo} alt="mini logo" />
+                <div className="footer__text">Privacy Policy</div>
+                <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved.</div>
+                <div className="footer__links">
+                    <a href="#">
+                        <img src={Telegram} alt="telegram"/>
+                    </a>
+                    <a href="#">
+                        <img src={XxX} alt="X"/>
+                    </a>
                 </div>
             </div>
     </main>
