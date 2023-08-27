@@ -232,6 +232,7 @@ body {
     box-shadow: 0px 0px 48px 0px rgba(142, 249, 0, 0.50);
 }
 .button__transparent {
+    background: rgba(255, 255, 255, 0.15);
     color:#fff
 }
 .button__transparent:hover {
@@ -281,21 +282,53 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap:32px;
-    grid-template-areas: "a c" "b c";
-    justify-items: stretch;
-    align-items: stretch;
+    grid-template-rows: auto auto;
+    gap: 32px;
+    grid-template-areas: "a b"
+                         "a c";
+    /* justify-items: stretch;
+    align-items: stretch; */
     color: #fff;
 }
 .about__1 {
     grid-area: a;
+    height: max-content;
 }
 .about__2 {
     grid-area: b;
+    display: flex;
+    justify-content: space-between;
+}
+.about__2__pic {
+  width: 220px;
+}
+.about__2__text {
+  color: var(--w, #FFF);
+  font-size: 24px;
+  line-height: 36px;
+  width: 276px;
+}
+.about__2__text_span {
+  background: var(--12421, linear-gradient(192deg, #B0FF09 0%, #05B8F1 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about__3 {
     grid-area: c;
+    display: flex;
+
+}
+.about__3__text {
+  color: var(--w, #FFF);
+  font-size: 24px;
+  line-height: 36px;
+}
+.about__3__text_span {
+  background: var(--12421, linear-gradient(192deg, #B0FF09 0%, #05B8F1 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about__section {
     border-radius: 16px;
@@ -306,10 +339,16 @@ body {
 
 .one__title {
     margin-bottom: 16px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 40px; 
     text-transform: capitalize;
+}
+.one__title_span {
+    background: var(--12421, linear-gradient(192deg, #B0FF09 0%, #05B8F1 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .one__text {
     font-size: 18px;
@@ -371,6 +410,80 @@ body {
     visibility: hidden;
 }
 
+.banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 920px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background-image: url('./img/mac.png');
+  position: relative;
+}
+.banner__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  font-size: 18px;
+  line-height: 32px;
+  height: 100%;
+  width: 100%;
+}
+.banner__buttons {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 220px 220px;
+  grid-template-rows: 56px;
+  left: 48px;
+  bottom: 48px;
+  position: absolute;
+}
+.tokenomics {
+  /* padding: 56px 82px; */
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: #0D0D0D;
+  position: relative;
+}
+.tokenomics__item {
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 16px 48px;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--w, #FFF);
+  width: max-content;
+  position: absolute;
+}
+.tokenomics__item_span {
+  background: var(--12421, linear-gradient(192deg, #B0FF09 0%, #05B8F1 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tokenomics__pic {
+  width: 100%;
+  margin: 56px 0 56px 0;
+}
+.tokenomics__casino {
+  top: 40px;
+  left: 51%;
+}
+.tokenomics__treasury {
+  top: 40px;
+  left: 79%;
+}
+.tokenomics__liquidity {
+  top: 280px;
+  left: 17%;
+}
+.tokenomics__team {
+  top: 280px;
+  left: 63%;
+}
+
 @media (max-width: 1600px) {
   .header {
     width: 1300px;
@@ -389,8 +502,27 @@ body {
   .about {
     gap:20px;
   }
+  .tokenomics__item {
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 24px;
+    font-size: 18px;
+    position: absolute;
+  }
 }
 @media (max-width: 1200px) {
+  .tokenomics__casino {
+    top: 35px;
+  }
+  .tokenomics__treasury {
+    top: 35px;
+  }
+  .tokenomics__liquidity {
+    top: 255px;
+  }
+  .tokenomics__team {
+    top: 255px;
+  }
   .one__title {
     margin-bottom: 10px;
   }
@@ -406,6 +538,26 @@ body {
   }
 }
 @media (max-width: 1005px) {
+  .tokenomics__casino {
+    top: 35px;
+  }
+  .tokenomics__treasury {
+    top: 35px;
+  }
+  .tokenomics__liquidity {
+    top: 230px;
+  }
+  .tokenomics__team {
+    top: 230px;
+  }
+  .about__2 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .about__2__text {
+    width: 100%;
+    margin-left: 12px;
+  }
   .title__text {
     font-size: 23px;
     line-height: 32px; 
@@ -446,7 +598,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "a" "b" "c";
     justify-items: stretch;
     align-items: stretch;
@@ -464,6 +616,42 @@ body {
     max-height: 56px;
     width: 100%;
   }
+
+  .banner {
+    height: 600px;
+  }
+  .banner__buttons {
+    grid-template-columns: 220px;
+    grid-template-rows: 56px 56px;
+    left: 24px;
+    bottom: 24px;
+  }
+}
+@media (max-width: 889px) {
+  .tokenomics__pic {
+    display: none;
+  }
+  .tokenomics__item {
+    position: static;
+    margin: 5px 0 5px 0;
+  }
+  .tokenomics {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  /* .tokenomics__casino {
+    top: 35px;
+  }
+  .tokenomics__treasury {
+    top: 35px;
+  }
+  .tokenomics__liquidity {
+    top: 230px;
+  }
+  .tokenomics__team {
+    top: 230px;
+  } */
 }
 
 

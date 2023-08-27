@@ -8,6 +8,9 @@ import telega from "./img/telega.svg"
 import copyIcon from "./img/copy.svg"
 import verify from "./img/verify.svg"
 import flash from "./img/flash.svg"
+import clever from "./img/clever.gif"
+import fox from "./img/fox.svg"
+import vector from "./img/vector.svg"
 import Header from './components/header';
 
 
@@ -41,10 +44,10 @@ function App() {
                 <div className="about">
                     <div className="about__1 about__section">
                         <div className="one__title">
-                            Meet range bet!
+                            Decentralized casino games with revenue share for <span className="one__title_span">$RBET</span> holders
                         </div>
                         <div className="one__text">
-                            Jinko Chino (jap. 人工知能 — Artificial Intelligence) is a next generation AI powered meme token ($JCAi) on Ethereum with a first of its kind use-case.
+                            Range bet ($RBET) — is a decentralized casino that provides fair games and offers a revenue share system for holders of $RBET tokens.
                         </div>
                         <div className="provide">
                             <div className="provide__links">
@@ -65,19 +68,52 @@ function App() {
                         </div>
                     </div>
                     <div className="about__2 about__section">
-                       
+                        <img src={clever} className="about__2__pic" alt="clever" />
+                        <div className="about__2__text">
+                            Predict the winning range of numbers, earn <span className="about__2__text_span">$RBET</span> and enjoy instant withdrawals
+                        </div>
                     </div>
                     <div className="about__3 about__section">
-                       
+                        <div className="about__3__text">
+                            With <span className="about__3__text_span">Metamask</span> integration, our platform ensures seamless and secure gameplay
+                        </div>
+                        <img className="about__3__text" src={fox} alt="" />
                     </div>
-                    
                 </div>
                 <div className="title">
-                <img className="title__logo" src={flash} alt="about"/>
-                <div className="title__text">
-                    Place a bet — win <span className="title__text_span">$RBET</span> tokens
+                    <img className="title__logo" src={flash} alt="about"/>
+                    <div className="title__text">
+                        Make a bets and win <span className="title__text_span">$RBET</span> tokens
+                    </div>
                 </div>
-            </div>
+                <div className="banner">
+                    <div className="banner__buttons">
+                        <a className="banner__button button__transparent" href="#" style={{marginRight: "8px"}}>Start app</a>
+                        <a className="banner__button button__style" href="#">Buy tokens</a>
+                    </div>
+                </div>
+
+                <div className="title">
+                    <img className="title__logo" src={flash} alt="about"/>
+                    <div className="title__text">
+                        Tokenomics
+                    </div>
+                </div>
+                <div className="tokenomics">
+                    <img className="tokenomics__pic" src={vector} alt="" />
+                    <div className="tokenomics__item tokenomics__casino">
+                        <span className="tokenomics__item_span" >30%</span> Casino Bank
+                    </div>
+                    <div className="tokenomics__item tokenomics__treasury">
+                        <span className="tokenomics__item_span">10%</span> Treasury
+                    </div>
+                    <div className="tokenomics__item tokenomics__liquidity">
+                        <span className="tokenomics__item_span">50%</span> Liquidity
+                    </div>
+                    <div className="tokenomics__item tokenomics__team">
+                        <span className="tokenomics__item_span">10%</span> Team
+                    </div>
+                </div>
             </div>
     </main>
   );
