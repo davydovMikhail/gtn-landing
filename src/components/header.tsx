@@ -49,7 +49,7 @@ const Header = () => {
           display: 'inline-block',
           color: '#fff',
           marginBottom: '70px',
-          fontSize: '40px'
+          fontSize: '28px'
         },
         bmOverlay: {
           background: 'rgba(0, 0, 0, 0.3)'
@@ -85,7 +85,7 @@ const Header = () => {
                 </a>
                 <a href="#about" onClick={() => {chooseTab(2)}} className={"header__item " + (tab === 2 ? "header__item_active" : "header__item_hover")}>
                     <div className={tab === 2 ? "header__text_active" : ""}>
-                        About us
+                      About the project
                     </div>
                 </a>
                 <a href="#tokenomics" onClick={() => {chooseTab(3)}} className={"header__item " + (tab === 3 ? "header__item_active" : "header__item_hover")}>
@@ -105,7 +105,7 @@ const Header = () => {
                   onClose={handleIsOpen}
                   styles={styles} right>
                     <a onClick={closeSideBar} className="menu-item" href="#main">Main page</a>
-                    <a onClick={closeSideBar} className="menu-item" href="#about">About us</a>
+                    <a onClick={closeSideBar} className="menu-item" href="#about">About the project</a>
                     <a onClick={closeSideBar} className="menu-item" href="#tokenomics">Tokenomics</a>
                     <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://play.rangebet.xyz/">Start App</a>
                     <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>

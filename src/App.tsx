@@ -8,6 +8,7 @@ import telega from "./img/telega.svg"
 import copyIcon from "./img/copy.svg"
 import verify from "./img/verify.svg"
 import flash from "./img/flash.svg"
+import graph from "./img/graph.svg"
 import clever from "./img/clever.gif"
 import fox from "./img/fox.svg"
 import vector from "./img/vector.svg"
@@ -97,7 +98,7 @@ function App() {
                 </div>
 
                 <div className="title">
-                    <img className="title__logo" src={flash} alt="about"/>
+                    <img className="title__logo" src={graph} alt="about"/>
                     <div className="title__text">
                         Tokenomics
                     </div>
