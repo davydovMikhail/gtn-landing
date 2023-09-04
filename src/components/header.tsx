@@ -93,7 +93,7 @@ const Header = () => {
             </div>
             <div className="header__buttons">
                 <a className="button__size button__transparent" target='_blank' href="https://play.rangebet.xyz/" style={{marginRight: "8px"}}>Start app</a>
-                <a className="button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> {/*  // here */}
+                <a className="button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
             </div>
             <div className='mob-menu'>
                 <Menu
@@ -105,7 +105,7 @@ const Header = () => {
                     <a onClick={closeSideBar} className="menu-item" href="#about">About the project</a>
                     <a onClick={closeSideBar} className="menu-item" href="#tokenomics">Tokenomics</a>
                     <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://play.rangebet.xyz/">Start App</a>
-                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> {/*  // here */}
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> 
                 </Menu>
             </div>
         </div>
