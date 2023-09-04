@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Logo from "../img/Logo.svg";
 import { slide as Menu } from 'react-burger-menu';
-import Timeout from 'await-timeout';
 
 const Header = () => {
     var styles = {
@@ -69,8 +68,6 @@ const Header = () => {
 
       async function chooseTab(tab: number) {
         setTab(tab);
-        await Timeout.set(2500);
-        setTab(0);
       }
 
     return (
@@ -96,7 +93,7 @@ const Header = () => {
             </div>
             <div className="header__buttons">
                 <a className="button__size button__transparent" target='_blank' href="https://play.rangebet.xyz/" style={{marginRight: "8px"}}>Start app</a>
-                <a className="button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
+                <a className="button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> {/*  // here */}
             </div>
             <div className='mob-menu'>
                 <Menu
@@ -108,7 +105,7 @@ const Header = () => {
                     <a onClick={closeSideBar} className="menu-item" href="#about">About the project</a>
                     <a onClick={closeSideBar} className="menu-item" href="#tokenomics">Tokenomics</a>
                     <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://play.rangebet.xyz/">Start App</a>
-                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> {/*  // here */}
                 </Menu>
             </div>
         </div>

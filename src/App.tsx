@@ -19,13 +19,13 @@ import Header from './components/header';
 
 
 function App() {
-  const [address, setAddress] = useState("0x12a...0949");
+  const [address, setAddress] = useState("0x12a...0949"); // here
 
   async function copyToClipboard() {
-    copy("0x12a804d83957Dd32E7f8bC997681E7Ecd4920949");
+    copy("0x12a804d83957Dd32E7f8bC997681E7Ecd4920949"); // here
     setAddress("Copied");
     await Timeout.set(1000);
-    setAddress("0x12a...0949");
+    setAddress("0x12a...0949"); // here
   }
 
 
@@ -55,10 +55,10 @@ function App() {
                         </div>
                         <div className="provide">
                             <div className="provide__links">
-                                <a href="#">
+                                <a href="#"> {/*  // here */}
                                     <img src={twitter} alt="x"/>
                                 </a>
-                                <a href="#">
+                                <a href="#"> {/*  // here */}
                                     <img src={telega} alt="tg"/>
                                 </a>
                             </div>
@@ -68,7 +68,7 @@ function App() {
                                     <img src={copyIcon} alt="copy icon"/>
                                 </div>
                             </div>
-                            <a className="provide__buy button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
+                            <a className="provide__buy button__size button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> {/*  // here */}
                         </div>
                     </div>
                     <div className="about__2 about__section">
@@ -93,7 +93,7 @@ function App() {
                 <div className="banner">
                     <div className="banner__buttons">
                         <a className="banner__button button__transparent" target='_blank' href="https://play.rangebet.xyz/" style={{marginRight: "8px"}}>Start app</a>
-                        <a className="banner__button button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a>
+                        <a className="banner__button button__style" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> {/*  // here */}
                     </div>
                 </div>
 
@@ -122,10 +122,10 @@ function App() {
                 <div className="footer__text">Privacy Policy</div>
                 <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved.</div>
                 <div className="footer__links">
-                    <a href="#">
+                    <a href="#"> {/*  // here */}
                         <img src={Telegram} alt="telegram"/>
                     </a>
-                    <a href="#">
+                    <a href="#"> {/*  // here */}
                         <img src={XxX} alt="X"/>
                     </a>
                 </div>
