@@ -107,16 +107,13 @@ function App() {
                 <div className="tokenomics">
                     <img className="tokenomics__pic" src={vector} alt="" />
                     <div className="tokenomics__item tokenomics__casino">
-                        <span className="tokenomics__item_span" >30%</span> Casino Bank
-                    </div>
-                    <div className="tokenomics__item tokenomics__treasury">
-                        <span className="tokenomics__item_span">10%</span> Treasury
+                        <span className="tokenomics__item_span" >6%</span> Casino Bank
                     </div>
                     <div className="tokenomics__item tokenomics__liquidity">
-                        <span className="tokenomics__item_span">50%</span> Liquidity
+                        <span className="tokenomics__item_span">90%</span> Liquidity
                     </div>
                     <div className="tokenomics__item tokenomics__team">
-                        <span className="tokenomics__item_span">10%</span> Team
+                        <span className="tokenomics__item_span">4%</span> Team
                     </div>
                 </div>
             </div>

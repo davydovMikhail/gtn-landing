@@ -493,19 +493,15 @@ body {
 }
 .tokenomics__casino {
   top: 40px;
-  left: 51%;
-}
-.tokenomics__treasury {
-  top: 40px;
-  left: 79%;
+  left: 70%;
 }
 .tokenomics__liquidity {
   top: 280px;
-  left: 17%;
+  left: 5%;
 }
 .tokenomics__team {
   top: 280px;
-  left: 63%;
+  left: 74%;
 }
 .footer {
   margin-top: 117px;
@@ -562,9 +558,6 @@ body {
   .tokenomics__casino {
     top: 35px;
   }
-  .tokenomics__treasury {
-    top: 35px;
-  }
   .tokenomics__liquidity {
     top: 255px;
   }
@@ -587,9 +580,6 @@ body {
 }
 @media (max-width: 1005px) {
   .tokenomics__casino {
-    top: 35px;
-  }
-  .tokenomics__treasury {
     top: 35px;
   }
   .tokenomics__liquidity {
