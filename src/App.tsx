@@ -55,10 +55,10 @@ function App() {
                         </div>
                         <div className="provide">
                             <div className="provide__links">
-                                <a href="#"> {/*  // here */}
+                                <a target="_blank" href="https://twitter.com/RangeBet">
                                     <img src={twitter} alt="x"/>
                                 </a>
-                                <a href="#"> {/*  // here */}
+                                <a target="_blank" href="https://t.me/rangebetcasino">
                                     <img src={telega} alt="tg"/>
                                 </a>
                             </div>
@@ -122,10 +122,10 @@ function App() {
                 <div className="footer__text">Privacy Policy</div>
                 <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved.</div>
                 <div className="footer__links">
-                    <a href="#"> {/*  // here */}
+                    <a target="_blank" href="https://t.me/rangebetcasino">
                         <img src={Telegram} alt="telegram"/>
                     </a>
-                    <a href="#"> {/*  // here */}
+                    <a target="_blank" href="https://twitter.com/RangeBet">
                         <img src={XxX} alt="X"/>
                     </a>
                 </div>
