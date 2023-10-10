@@ -19,13 +19,13 @@ import Header from './components/header';
 
 
 function App() {
-  const [address, setAddress] = useState("0x12a...0949"); // here
+  const [address, setAddress] = useState("Contract TBA"); // here
 
   async function copyToClipboard() {
-    copy("0x12a804d83957Dd32E7f8bC997681E7Ecd4920949"); // here
+    copy("Contract To Be Announced"); // here
     setAddress("Copied");
     await Timeout.set(1000);
-    setAddress("0x12a...0949"); // here
+    setAddress("Contract TBA"); // here
   }
 
 
