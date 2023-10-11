@@ -14,7 +14,7 @@ import fox from "./img/fox.svg"
 import vector from "./img/vector.svg"
 import MiniLogo from "./img/MiniLogo.svg"
 import Telegram from "./img/Telegram.svg"
-import XxX from "./img/twitter.png"
+import XxX from "./img/xxx.svg"
 import Header from './components/header';
 
 
@@ -119,7 +119,6 @@ function App() {
             </div>
             <div className="footer">
                 <img src={MiniLogo} alt="mini logo" />
-                <div className="footer__text">Privacy Policy</div>
                 <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved.</div>
                 <div className="footer__links">
                     <a target="_blank" href="https://t.me/rangebetcasino">

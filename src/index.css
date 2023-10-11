@@ -510,7 +510,7 @@ body {
   height: 176px;
   padding: 48px 100px;
   display: grid;
-  grid-template-columns: 135px 157px 1fr 80px;
+  grid-template-columns: 135px 1fr 80px;
   align-items: center;
 }
 .footer__links {
@@ -520,7 +520,7 @@ body {
 }
 
 .footer__text {
-  color: var(--white-op-20, rgba(255, 255, 255, 0.20));
+  color: var(--white-op-20, rgba(255, 255, 255, 1));
   font-size: 18px;
   font-weight: 500;
   text-decoration-line: underline;
@@ -670,7 +670,7 @@ body {
     height: 145px;
     padding: 5px 12px;
     display: grid;
-    grid-template-columns: 75px 95px 1fr 80px;
+    grid-template-columns: 75px 1fr 80px;
     align-items: center;
   }
   .footer__text {
