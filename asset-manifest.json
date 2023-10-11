@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.344f9f87.css",
-    "main.js": "/static/js/main.11856b81.js",
+    "main.css": "/static/css/main.2f423321.css",
+    "main.js": "/static/js/main.dcdd044d.js",
     "static/media/clever.gif": "/static/media/clever.cac2eaeab950846fae8a.gif",
     "static/media/mac.png": "/static/media/mac.af7d0c4234c172f5ea42.png",
     "static/media/bottomBG.svg": "/static/media/bottomBG.3b023384503e13bef1c2.svg",
@@ -15,16 +15,17 @@
     "static/media/graph.svg": "/static/media/graph.cb4255a6e660035985797b2e640bb782.svg",
     "static/media/Logo.svg": "/static/media/Logo.94aff54a0580e58cc9c957c135b9e99c.svg",
     "static/media/flash.svg": "/static/media/flash.e6b46a0b6d700232441b121387a2198a.svg",
-    "static/media/Telegram.svg": "/static/media/Telegram.5f7548af0f7380c723ce281b6570bba5.svg",
+    "static/media/Telegram.svg": "/static/media/Telegram.cf6feab34fd2ee4472c1319aad5e95dd.svg",
     "static/media/twitter.svg": "/static/media/twitter.9c5315897b478584dff28db2778a1166.svg",
+    "static/media/xxx.svg": "/static/media/xxx.527a7299b69009a445793f7d32067d34.svg",
     "index.html": "/index.html",
     "static/media/copy.svg": "/static/media/copy.f1b835879d848fe671068838372461d2.svg",
     "static/media/telega.svg": "/static/media/telega.1d200c7efd5ae5ef4a391a851cb1ff29.svg",
-    "main.344f9f87.css.map": "/static/css/main.344f9f87.css.map",
-    "main.11856b81.js.map": "/static/js/main.11856b81.js.map"
+    "main.2f423321.css.map": "/static/css/main.2f423321.css.map",
+    "main.dcdd044d.js.map": "/static/js/main.dcdd044d.js.map"
   },
   "entrypoints": [
-    "static/css/main.344f9f87.css",
-    "static/js/main.11856b81.js"
+    "static/css/main.2f423321.css",
+    "static/js/main.dcdd044d.js"
   ]
 }
