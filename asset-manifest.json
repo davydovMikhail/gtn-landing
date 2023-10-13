@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b86e91e5.css",
-    "main.js": "/static/js/main.e9e44e6e.js",
+    "main.css": "/static/css/main.d2a18b51.css",
+    "main.js": "/static/js/main.e979a1c1.js",
     "static/media/clever.gif": "/static/media/clever.cac2eaeab950846fae8a.gif",
     "static/media/mac.png": "/static/media/mac.af7d0c4234c172f5ea42.png",
     "static/media/bottomBG.svg": "/static/media/bottomBG.3b023384503e13bef1c2.svg",
@@ -18,14 +18,15 @@
     "static/media/Telegram.svg": "/static/media/Telegram.cf6feab34fd2ee4472c1319aad5e95dd.svg",
     "static/media/twitter.svg": "/static/media/twitter.9c5315897b478584dff28db2778a1166.svg",
     "static/media/xxx.svg": "/static/media/xxx.527a7299b69009a445793f7d32067d34.svg",
+    "static/media/ext.svg": "/static/media/ext.61399b55ab9d1ae5876bf6fb6c9cee2f.svg",
     "index.html": "/index.html",
     "static/media/copy.svg": "/static/media/copy.f1b835879d848fe671068838372461d2.svg",
     "static/media/telega.svg": "/static/media/telega.1d200c7efd5ae5ef4a391a851cb1ff29.svg",
-    "main.b86e91e5.css.map": "/static/css/main.b86e91e5.css.map",
-    "main.e9e44e6e.js.map": "/static/js/main.e9e44e6e.js.map"
+    "main.d2a18b51.css.map": "/static/css/main.d2a18b51.css.map",
+    "main.e979a1c1.js.map": "/static/js/main.e979a1c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.b86e91e5.css",
-    "static/js/main.e9e44e6e.js"
+    "static/css/main.d2a18b51.css",
+    "static/js/main.e979a1c1.js"
   ]
 }
