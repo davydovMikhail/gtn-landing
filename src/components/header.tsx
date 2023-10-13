@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Logo from "../img/Logo.svg";
+import Ext from "../img/ext.svg";
 import { slide as Menu } from 'react-burger-menu';
 
 const Header = () => {
@@ -90,6 +91,14 @@ const Header = () => {
                         Tokenomics
                     </div>
                 </a>
+                <a href="https://rbet.gitbook.io/" target="_blank" className={"header__item header__item_hover"}>
+                    <div className="header__ext">
+                        <div>
+                          Whitepaper
+                        </div>
+                        <img className="header__icon" src={Ext} alt="ext" />
+                    </div>
+                </a>
             </div>
             <div className="header__buttons">
                 <a className="button__size button__transparent" target='_blank' href="https://play.rangebet.xyz/" style={{marginRight: "8px"}}>Start app</a>
@@ -104,6 +113,7 @@ const Header = () => {
                     <a onClick={closeSideBar} className="menu-item" href="#main">Main page</a>
                     <a onClick={closeSideBar} className="menu-item" href="#about">About the project</a>
                     <a onClick={closeSideBar} className="menu-item" href="#tokenomics">Tokenomics</a>
+                    <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://rbet.gitbook.io/">Whitepaper</a>
                     <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://play.rangebet.xyz/">Start App</a>
                     <a onClick={closeSideBar} className="menu-item" target='_blank' href="https://app.uniswap.org/#/swap">Buy tokens</a> 
                 </Menu>

@@ -205,9 +205,15 @@ body {
     z-index: 1000;
 } 
 .header__bar {
-    width: 535px;
+    max-width: 736px;
     display: flex;
     justify-content: space-between;
+}
+.header__ext {
+  display: flex;
+}
+.header__icon {
+  margin-left: 10px;
 }
 .header__item {
     padding: 8px 24px;
@@ -541,6 +547,34 @@ body {
   }
 }
 @media (max-width: 1400px) {
+  .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 10px 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 0;
+    transform: translateX(0);
+  }
+  .header__bar {
+    display: none;
+  }
+  .header__buttons {
+    display: none;
+  }
+  .mob-menu {
+    display: block;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 50px;
+  }
   .tokenomics__casino {
     left: 65%;
   }
@@ -552,9 +586,6 @@ body {
   }
   .tokenomics__team {
     left: 75%;
-  }
-  .header {
-    width: 1000px;
   }
   .about {
     gap:20px;
@@ -599,9 +630,6 @@ body {
   }
 }
 @media (max-width: 1005px) {
-  .tokenomics__casino {
-    top: 35px;
-  }
   .tokenomics__liquidity {
     top: 230px;
   }
@@ -623,35 +651,6 @@ body {
   .anchor {
     top: -81px;
   }
-  .header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 8px 10px 8px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-    border-radius: 0;
-    transform: translateX(0);
-  }
-  .header__bar {
-    display: none;
-  }
-  .header__buttons {
-    display: none;
-  }
-  .mob-menu {
-    display: block;
-  }
-  .logo {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px 50px;
-  }
   .about {
     width: 100%;
     display: grid;
@@ -666,7 +665,6 @@ body {
     text-align: center;
     padding: 12px 16px;
     vertical-align: middle;
-
     text-align: center;
     border-radius: 28px;
     font-size: 18px;
@@ -674,7 +672,6 @@ body {
     max-height: 56px;
     width: 100%;
   }
-
   .banner {
     height: 600px;
   }
