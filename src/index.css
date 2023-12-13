@@ -535,6 +535,17 @@ body {
   font-weight: 500;
   text-decoration-line: underline;
 }
+.footer__link {
+  color: #FFF;
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
 @media (max-width: 1600px) {
   .header {
     width: 1300px;
@@ -691,6 +702,9 @@ body {
     align-items: center;
   }
   .footer__text {
+    font-size: 12px;
+  }
+  .footer__link {
     font-size: 12px;
   }
   .tokenomics__pic {

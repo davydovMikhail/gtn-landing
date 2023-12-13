@@ -19,13 +19,13 @@ import Header from './components/header';
 
 
 function App() {
-  const [address, setAddress] = useState("Contract TBA"); // here
+  const [address, setAddress] = useState("0xD99...CFBF"); // here
 
   async function copyToClipboard() {
-    copy("Contract To Be Announced"); // here
+    copy("0xD999B1dA916BC1e48F75e77288bbfCb67138CFBF"); // here
     setAddress("Copied");
     await Timeout.set(1000);
-    setAddress("Contract TBA"); // here
+    setAddress("0xD99...CFBF"); // here
   }
 
 
@@ -122,7 +122,7 @@ function App() {
             </div>
             <div className="footer">
                 <img src={MiniLogo} alt="mini logo" />
-                <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved.</div>
+                <div className="footer__text">Copyright 2023. RabgeBet. All Rights Reserved. <br /> <a className='footer__link' href="mailto:rangebet@proton.me">Rangebet@Proton.me</a></div>
                 <div className="footer__links">
                     <a target="_blank" href="https://t.me/rangebetcasino">
                         <img src={Telegram} alt="telegram"/>
